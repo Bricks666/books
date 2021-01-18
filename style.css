@@ -1,0 +1,163 @@
+body,
+h1,
+h2,
+h3,
+h4,
+main,
+section,
+article,
+p {
+  margin: 0;
+  padding: 0;
+}
+/*Основные параметры*/
+body {
+  /*Размеры*/
+  min-width: 1440px;
+  /*Текст*/
+  font-family: "PT Sans", "Roboto", sans-serif;
+  font-size: 32px;
+  text-align: justify;
+  font-weight: 400;
+  color: #000;
+}
+/*Стандартный контейнер*/
+.container {
+  /*Размеры*/
+  width: 1440px;
+  /*Стандартное положение*/
+  margin: 0 auto;
+  padding: 0;
+}
+/*Шапка*/
+.head {
+  /*Градиент*/
+  background: linear-gradient(
+      114.89deg,
+      #5e83ba 40.8%,
+      rgba(94, 131, 186, 0.35) 58.88%,
+      #3a4e7a 65.53%,
+      #3a4e7a 74.05%
+    ),
+    #3a4e7a;
+  /*Положение*/
+  padding-top: 94px;
+  padding-bottom: 72px;
+  /*Текст*/
+  color: #f1f1f0;
+}
+/*Название*/
+.head-name {
+  /*Текст*/
+  font-size: 70px;
+  text-shadow: 0 0 1px #000;
+  /*Положение*/
+  margin-bottom: 52px;
+  margin-left: 144px;
+}
+/*Слоган*/
+.head-slogan {
+  /*Текст*/
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  /*Положение*/
+  text-align: right;
+  margin-right: 136px;
+}
+/*Навигация*/
+.navigation {
+  background: #3a4e7a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0 20px;
+}
+/*Дизайн навигации*/
+.navigation button {
+  background: #3a4e7a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0;
+  width: 244px;
+  margin: 0 18px;
+}
+/*Положение текста в кнопке*/
+.button {
+  margin: 22px auto;
+}
+/*Текст навигации*/
+.navigation button h2 {
+  color: #f1f1f0;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.main {
+  padding-top: 132px;
+}
+.main .container {
+  padding: 0 102px;
+  box-sizing: border-box;
+}
+.about-book {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 34px;
+  text-align: center;
+}
+.info-book {
+  margin-bottom: 70px;
+  display: flex;
+}
+.picture {
+  width: 440px;
+  height: 616px;
+}
+.description {
+  margin-left: 46px;
+}
+.name-book {
+  text-align: center;
+  margin: 0 auto 22px;
+  line-height: 38px;
+}
+.text-book {
+  font-size: 28px;
+  line-height: 40px;
+}
+.charpet {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.list {
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+}
+.list-item {
+  color: #000;
+  text-decoration: none;
+}
+.download {
+  margin: 70px 0 192px;
+}
+.download-buttom {
+  padding: 20px 68px;
+  background-color: #5e83ba;
+  color: #f1f1f1;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 300;
+  border: 0;
+}
+.footer {
+  background: linear-gradient(0deg, #091d36 -2.78%, #3a4e7a 100%), #3a4e7a;
+  padding: 74px 598px;
+}
+.copy-right {
+  color: #f1f1f1;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+}
