@@ -32,60 +32,48 @@ body {
 /*Шапка*/
 .head {
   /*Градиент*/
-  background: linear-gradient(
-      114.89deg,
-      #5e83ba 40.8%,
-      rgba(94, 131, 186, 0.35) 58.88%,
-      #3a4e7a 65.53%,
-      #3a4e7a 74.05%
-    ),
-    #3a4e7a;
-  /*Положение*/
-  padding-top: 94px;
-  padding-bottom: 72px;
+  background: linear-gradient(90.59deg, #018c96 43.08%, #016a66 70.49%);
   /*Текст*/
   color: #f1f1f0;
 }
-/*Название*/
-.head-name {
-  /*Текст*/
-  font-size: 70px;
-  text-shadow: 0 0 1px #000;
-  /*Положение*/
-  margin-bottom: 52px;
-  margin-left: 144px;
+.logo {
+  margin-top: 28px;
+  margin-left: 80px;
+  margin-bottom: 70px;
+  max-height: 142px;
+  max-width: 542;
 }
 /*Слоган*/
 .head-slogan {
   /*Текст*/
   font-size: 30px;
   font-style: italic;
-  font-weight: 400;
   /*Положение*/
   text-align: right;
   margin-right: 136px;
 }
 /*Навигация*/
 .navigation {
-  background: #3a4e7a;
+  background: #018c96;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 0 20px;
 }
 /*Дизайн навигации*/
 .navigation button {
-  background: #3a4e7a;
+  background: #018c96;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
   border: 0;
   width: 244px;
   margin: 0 18px;
 }
 /*Положение текста в кнопке*/
 .button {
-  margin: 22px auto;
+  margin: 16px auto;
 }
 /*Текст навигации*/
 .navigation button h2 {
-  color: #f1f1f0;
+  color: #F6EBF9;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
@@ -144,19 +132,18 @@ body {
 }
 .download-buttom {
   padding: 20px 68px;
-  background-color: #5e83ba;
-  color: #f1f1f1;
-  font-size: 28px;
-  line-height: 33px;
-  font-weight: 300;
+  background-color: #efb52b;
+  color: #F6EBF9;
+  font-size: 30px;
+  line-height: 36px;
   border: 0;
 }
 .footer {
-  background: linear-gradient(0deg, #091d36 -2.78%, #3a4e7a 100%), #3a4e7a;
+  background: linear-gradient(97.48deg, #018c96 39.59%, #016a66 58.05%);
   padding: 74px 598px;
 }
 .copy-right {
-  color: #f1f1f1;
+  color: #F6EBF9;
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
