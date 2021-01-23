@@ -8,69 +8,155 @@
   <body>
     <header class="head">
       <div class="container">
-        <img class = "logo" src = "img/book_logo.svg"alt ="logo"/>
+        <img class="logo" src="img/book_logo.svg" alt="logo" />
       </div>
     </header>
-    <nav class="navigation">
+    <nav class="nav">
       <div class="container">
-        <button type="button">
-          <div class="button"><h2>Новости</h2></div>
-        </button>
-        <button type="button">
-          <div class="button"><h2>Об авторах</h2></div>
-        </button>
-        <button type="button">
-          <div class="button"><h2>Книга</h2></div>
-        </button>
-        <button type="button">
-          <div class="button"><h2>Поддержка</h2></div>
-        </button>
-        <button type="button">
-          <div class="button"><h2>Связь</h2></div>
-        </button>
+        <ul class="struct-nav">
+          <li class="button button-nav">
+            <a
+              href="https:\\www.vk.com/uty_momo"
+              class="button-text button-text-nav"
+              >Новости</a
+            >
+          </li>
+          <li class="button button-nav">
+            <a href="#" class="button-text button-text-nav">Об авторах</a>
+          </li>
+          <li class="button button-nav">
+            <a href="#" class="button-text button-text-nav">Книга</a>
+          </li>
+          <li class="button button-nav">
+            <a href="#" class="button-text button-text-nav">Поддержка</a>
+          </li>
+          <li class="button button-nav">
+            <a href="#" class="button-text button-text-nav">Связь</a>
+          </li>
+        </ul>
       </div>
     </nav>
     <main class="main">
       <section>
         <div class="container">
-          <h2 class="about-book">О нашей книге</h2>
-          <article class="info-book">
-            <img class="picture" src="img/Книга.jpg" />
-            <div class="description">
-              <h3 class="name-book">Революция сознания</h3>
-              <p class="text-book">
-                Главный герой Валерий вот уже несколько десятков лет живет в
-                одном городе на одной улице и все в той же квартире с
-                неизменивщемся с момента заезда ремонтом ремонтом, ходит и
-                работает Гордоморов на первом и, по его представлениям,
-                последнем месте работы в своей уже движущейся к концу жизни. Но
-                в один из послерабочих осенних вечеров, Валера приходит к четкой
-                мысли, что пора что-то менять в своей жизни, а если сказать
-                полнее, то все, все...
-              </p>
-            </div>
-          </article>
-          <article>
-            <h4 class="charpet">Главы</h4>
-            <ol class="list">
-              <li><a href="#" class="list-item">"Дорога на работу"</a></li>
-              <li><a href="#" class="list-item">"Конец рабочей рутины"</a></li>
-              <li><a href="#" class="list-item">"Неспокойная ночь"</a></li>
-              <li><a href="#" class="list-item">"Томительное ожидание"</a></li>
-              <li><a href="#" class="list-item">""</a></li>
-            </ol>
-          </article>
-          <article class="download"> 
-            <a href="#" download=""></a>
-              <button for="file" class="download-buttom">Скачать</button>
-            </a>
-          </article>
+          <div class="struct-main">
+            <article class="info-book">
+              <h2 class="about-book">О нашей книге</h2>
+              <img class="picture" src="img/Книга.jpg" />
+              <div class="description">
+                <h3 class="name-book">Революция сознания</h3>
+                <p class="text-book">
+                  Главный герой Валерий вот уже несколько десятков лет живет в
+                  одном городе на одной улице и все в той же квартире с
+                  неизменивщемся с момента заезда ремонтом ремонтом, ходит и
+                  работает Гордоморов на первом и, по его представлениям,
+                  последнем месте работы в своей уже движущейся к концу жизни.
+                  Но в один из послерабочих осенних вечеров, Валера приходит к
+                  четкой мысли, что пора что-то менять в своей жизни, а если
+                  сказать полнее, то все, все...
+                </p>
+              </div>
+            </article>
+            <article class="list-charpets">
+              <h4 class="charpet">Главы</h4>
+              <ol class="list">
+                <li><a href="#" class="list-item">"Дорога на работу"</a></li>
+                <li>
+                  <a href="#" class="list-item">"Конец рабочей рутины"</a>
+                </li>
+                <li><a href="#" class="list-item">"Неспокойная ночь"</a></li>
+                <li>
+                  <a href="#" class="list-item">"Томительное ожидание"</a>
+                </li>
+                <li><a href="#" class="list-item">""</a></li>
+              </ol>
+            </article>
+            <article class="download">
+              <div class="button button-download">
+                <a
+                  class="button-text"
+                  href="Book/Revolution_of_mind.docx"
+                  download
+                >
+                  Скачать
+                </a>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <p class="copy-right">Все права защищены Мандарин&Со 2020-2020</p>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <span class="copy-right">Mandarin&Со 2020</span>
+          </li>
+          <li class="footer-item"><span>Контакты:</span></li>
+          <li class="footer-item">
+            <ul class="contacts-list">
+              Вконтакте
+              <li class="footer-item">
+                <a
+                  class="contact-name vk"
+                  href="https:\\vk.com\uty_momo"
+                  target="_blank"
+                >
+                  Кирилл
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  class="contact-name vk"
+                  href="https://vk.com/7azino77"
+                  target="_blank"
+                >
+                  Тимур
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-item">
+            <ul class="contacts-list">
+              Инстаграм
+              <li class="footer-item">
+                <a
+                  class="contact-name inst"
+                  href="https://instagram.com/_kurtizan_veka_"
+                  target="_blank"
+                >
+                  Кирилл
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  class="contact-name inst"
+                  href="https://instagram.com/just._.no._.name"
+                  target="_blank"
+                >
+                  Тимур
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-item">
+            <ul class="contacts-list">
+              Почта
+              <li class="footer-item">
+                <a
+                  class="contact-name mail"
+                  href="mailto:tconckoff82@gmail.com"
+                  target="_blank"
+                >
+                  Кирилл
+                </a>
+              </li>
+              <li class="footer-item">
+                <a class="contact-name mail" href="" target="_blank"> Тимур </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

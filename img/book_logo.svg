@@ -194,11 +194,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="645.51668"
-     inkscape:cy="-152.47375"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="120.75998"
+     inkscape:cy="128.51945"
      inkscape:document-units="px"
-     inkscape:current-layer="layer12"
+     inkscape:current-layer="layer14"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
@@ -621,20 +621,19 @@
        inkscape:label="Обложка левая"
        style="display:inline">
       <path
-         style="display:inline;fill:#eb5401;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="display:inline;fill:#eb5401;fill-opacity:1;stroke:#000000;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M 3.0940514,39.638542 C 2.3132358,39.493389 1.5316096,39.348086 1.194248,38.823457 0.85688644,38.298828 0.96439871,37.396898 1.4866343,37.066897 c 0.5222356,-0.33 1.4573671,-0.08585 2.3918177,0.158126"
          id="path1551"
          sodipodi:nodetypes="cccc"
          inkscape:original-d="M 3.0940514,39.638542 C 2.313197,39.493598 1.5315709,39.348294 0.74915128,39.202628 0.85717839,38.298863 0.96469073,37.396933 1.0722232,36.492349 2.008822,36.73708 2.9439535,36.981232 3.878452,37.225023"
          inkscape:path-effect="#path-effect1553" />
       <rect
-         style="display:inline;opacity:1;fill:#eb5401;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.795695;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="display:inline;opacity:1;fill:#eb5401;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.530463;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect1654"
          width="32.750977"
          height="2.5129867"
          x="12.546803"
          y="36.520809"
-         ry="0.0012970916"
          transform="matrix(0.99056838,0.13701925,-0.23411351,0.97220926,1.1512971e-8,1.0688362e-7)" />
     </g>
     <g
@@ -643,20 +642,19 @@
        inkscape:label="Обложка правая"
        style="display:inline">
       <path
-         style="display:inline;fill:#eb5401;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="display:inline;fill:#eb5401;fill-opacity:1;stroke:#000000;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 73.741265,39.687431 c 0.914297,-0.06328 1.829303,-0.126618 2.166161,-0.679962 0.336859,-0.553344 0.09554,-1.593521 -0.460596,-1.976625 -0.55614,-0.383104 -1.425334,-0.105598 -2.293797,0.171676"
          id="path1551-0"
          inkscape:path-effect="#path-effect1627"
          inkscape:original-d="m 73.741265,39.687431 c 0.914317,-0.063 1.829322,-0.126337 2.74506,-0.190004 -0.241847,-1.043347 -0.483162,-2.083524 -0.725556,-3.127477 -0.869978,0.278106 -1.739172,0.555613 -2.607736,0.83257"
          sodipodi:nodetypes="cccc" />
       <rect
-         style="display:inline;opacity:1;fill:#eb5401;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.795458;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="display:inline;opacity:1;fill:#eb5401;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.53030514;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect1654-1"
          width="32.756573"
          height="2.5535853"
          x="30.12903"
          y="-49.78875"
-         ry="0.0013180468"
          transform="matrix(0.99024493,-0.13933757,-0.23035552,-0.97310654,1.1512971e-8,1.0688362e-7)" />
     </g>
     <g
@@ -665,14 +663,14 @@
        inkscape:label="Корень"
        style="display:inline">
       <path
-         style="fill:#eb5401;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#eb5401;fill-opacity:1;stroke:#000000;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 35.732036,44.394849 c 0.0028,2.191636 0.0055,4.381423 0.913344,5.48883 0.90781,1.107407 2.720129,1.131716 3.627258,0.01088 0.90713,-1.120838 0.909496,-3.387709 0.911864,-5.65558"
          id="path1547"
          inkscape:path-effect="#path-effect1549"
          inkscape:original-d="m 35.732036,44.394849 c 0.0031,2.191636 0.0057,4.381423 0.0083,6.57192 1.812849,0.0247 3.625168,0.04901 5.437066,0.07293 0.0027,-2.26598 0.005,-4.532851 0.0071,-6.800722"
          sodipodi:nodetypes="cccc" />
       <path
-         style="opacity:1;fill:#eb5401;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="opacity:1;fill:#eb5401;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.52916667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path1629"
          sodipodi:type="arc"
          sodipodi:cx="38.519154"
@@ -685,7 +683,7 @@
          d="m 41.306267,44.203175 a 2.7871137,4.3240571 0 0 1 -1.402403,3.752633 2.7871137,4.3240571 0 0 1 -2.795903,-0.02382 2.7871137,4.3240571 0 0 1 -1.375753,-3.776303"
          sodipodi:open="true" />
       <rect
-         style="display:inline;opacity:1;fill:#eb5401;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.79375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="display:inline;opacity:1;fill:#eb5401;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.52916667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect1671"
          width="4.3954678"
          height="0.054204807"
@@ -697,7 +695,8 @@
        inkscape:groupmode="layer"
        id="layer16"
        inkscape:label="Страницы"
-       style="display:inline;opacity:1">
+       style="display:inline;opacity:1"
+       sodipodi:insensitive="true">
       <path
          style="display:inline;opacity:1;fill:none;fill-opacity:0.314865;stroke:#ffffff;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M 38.642134,41.949424 C 29.978745,36.597361 15.547267,37.164193 3.6899645,35.797374"

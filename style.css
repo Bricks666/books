@@ -6,20 +6,24 @@ h4,
 main,
 section,
 article,
-p {
+p,
+li,
+ul,
+ol,
+a {
   margin: 0;
   padding: 0;
 }
 /*Основные параметры*/
 body {
-  /*Размеры*/
-  min-width: 1440px;
+  display: flex;
+  flex-direction: column;
   /*Текст*/
-  font-family: "PT Sans", "Roboto", sans-serif;
-  font-size: 32px;
+  font-family: "Ubuntu";
+  font-size: 28px;
   text-align: justify;
   font-weight: 400;
-  color: #000;
+  color: #121215;
 }
 /*Стандартный контейнер*/
 .container {
@@ -33,118 +37,158 @@ body {
 .head {
   /*Градиент*/
   background: linear-gradient(90.59deg, #018c96 43.08%, #016a66 70.49%);
-  /*Текст*/
-  color: #f1f1f0;
 }
 .logo {
   margin-top: 28px;
   margin-left: 80px;
   margin-bottom: 70px;
-  max-height: 142px;
-  max-width: 542;
 }
-/*Слоган*/
-.head-slogan {
-  /*Текст*/
-  font-size: 30px;
-  font-style: italic;
-  /*Положение*/
-  text-align: right;
-  margin-right: 136px;
-}
-/*Навигация*/
-.navigation {
-  background: #018c96;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 0 20px;
+.struct-nav {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
 }
 /*Дизайн навигации*/
-.navigation button {
+.nav {
   background: #018c96;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  border: 0;
-  width: 244px;
-  margin: 0 18px;
 }
-/*Положение текста в кнопке*/
 .button {
-  margin: 16px auto;
+  flex-basis: 244px;
+  text-align: center;
 }
-/*Текст навигации*/
-.navigation button h2 {
-  color: #F6EBF9;
+.button-nav {
+  border-bottom: 5px solid #018c96;
+}
+.button-nav:hover {
+  border-bottom: 5px solid #016a66;
+}
+.button-text {
+  display: block;
+  padding: 16px 0;
+  color: #f6ebf9;
+  text-decoration: none;
+}
+.button-text-nav {
   font-size: 20px;
   font-weight: 500;
-  text-align: center;
 }
 .main {
-  padding-top: 132px;
+  margin-top: 122px;
+  display: flex;
+  justify-content: center;
 }
 .main .container {
-  padding: 0 102px;
+  padding: 0 231px;
   box-sizing: border-box;
 }
-.about-book {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 34px;
-  text-align: center;
+.struct-main {
+  display: flex;
+  flex-direction: column;
 }
 .info-book {
-  margin-bottom: 70px;
+  margin-bottom: 68px;
   display: flex;
+  flex-wrap: wrap;
+}
+.about-book {
+  flex-basis: 100%;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 68px;
+  text-align: center;
 }
 .picture {
-  width: 440px;
-  height: 616px;
+  flex: 1;
 }
 .description {
-  margin-left: 46px;
+  margin-left: 36px;
+  flex: 2;
 }
 .name-book {
+  font-size: 32px;
   text-align: center;
-  margin: 0 auto 22px;
+  margin: 0 auto 50px;
   line-height: 38px;
 }
 .text-book {
-  font-size: 28px;
   line-height: 40px;
 }
+.list-charpets {
+  margin-bottom: 70px;
+}
 .charpet {
-  font-size: 32px;
-  line-height: 40px;
-  margin-bottom: 30px;
-  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 32px;
+  font-weight: 600;
 }
 .list {
   margin-left: 10px;
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 32px;
 }
 .list-item {
-  color: #000;
+  font-weight: 300;
+  line-height: 36px;
+  color: #121215;
   text-decoration: none;
 }
 .download {
-  margin: 70px 0 192px;
+  display: flex;
+  margin-bottom: 390px;
 }
-.download-buttom {
-  padding: 20px 68px;
+.button-download {
   background-color: #efb52b;
-  color: #F6EBF9;
+  border-radius: 8px;
+  transition: background 0.15s ease-out 0.05s;
+}
+.button-text-down {
   font-size: 30px;
   line-height: 36px;
-  border: 0;
+}
+.button-download:hover {
+  background: #018c96;
 }
 .footer {
   background: linear-gradient(97.48deg, #018c96 39.59%, #016a66 58.05%);
-  padding: 74px 598px;
+  padding: 40px 0 74px;
+}
+.footer-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-item {
+  font-family: fantasy;
+  color: rgb(246, 235, 249);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
 }
 .copy-right {
-  color: #F6EBF9;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 28px;
+  background: url("img/copyright.svg") no-repeat left top;
+  background-size: 18px 18px;
+  padding-left: 24px;
+}
+.contacts-list {
+  list-style: none;
+}
+.contact-name {
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  color: #f6ebf9;
+}
+.vk {
+  background: url("img/vk.svg") no-repeat left center;
+  background-size: 26px 26px;
+  padding-left: 34px;
+}
+.inst {
+  background: url("img/instagram.svg") no-repeat left center;
+  background-size: 26px 26px;
+  padding-left: 34px;
+}
+.mail {
+  background: url("img/mail.svg") no-repeat left center;
+  background-size: 26px 26px;
+  padding-left: 34px;
 }
