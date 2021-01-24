@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   /*Текст*/
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   font-size: 28px;
   text-align: justify;
   font-weight: 400;
@@ -50,6 +50,7 @@ body {
 }
 /*Дизайн навигации*/
 .nav {
+  font-family: fantasy;
   background: #018c96;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -71,7 +72,7 @@ body {
 }
 .button-text-nav {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: medium;
 }
 .main {
   margin-top: 122px;
@@ -79,7 +80,7 @@ body {
   justify-content: center;
 }
 .main .container {
-  padding: 0 231px;
+  padding-left: 38px;
   box-sizing: border-box;
 }
 .struct-main {
@@ -100,34 +101,40 @@ body {
 }
 .picture {
   flex: 1;
+  object-fit: cover;
 }
 .description {
-  margin-left: 36px;
-  flex: 2;
+  margin-left: 120px;
+  flex: 5;
 }
 .name-book {
+  font-weight: 500;
   font-size: 32px;
   text-align: center;
   margin: 0 auto 50px;
   line-height: 38px;
 }
-.text-book {
+.description-text {
+  margin-left: 52px;
+  font-weight: 300;
   line-height: 40px;
 }
 .list-charpets {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 .charpet {
   line-height: 36px;
   margin-bottom: 32px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .list {
-  margin-left: 10px;
+  font-size: 26px;
+  margin-left: 40px;
+  font-weight: 300;
+  line-height: 40px;
+  color: #121215;
 }
 .list-item {
-  font-weight: 300;
-  line-height: 36px;
   color: #121215;
   text-decoration: none;
 }
