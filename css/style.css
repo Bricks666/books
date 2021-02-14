@@ -1,0 +1,696 @@
+/*Сброс стандартных отступов*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body,
+li,
+ul,
+nav,
+a,
+time,
+article {
+  padding: 0;
+  margin: 0;
+}
+/*Задание универсальных параметров для страницы*/
+html {
+  /*Рассчет базового множителя пропорции шрифта(Размер 4 пикселей на ширине в 1920)*/
+  font-size: 0.20833vw;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Nobile", sans-serif;
+}
+/*Стандартный контейнер*/
+.container {
+  /*Считаем размер*/
+  width: calc(100vw - (7.916667vw * 2));
+  /*Все у нас будет флекссссссс*/
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body {
+  /*Всееееее флексссс*/
+  display: flex;
+  /*НУ и в столбик*/
+  flex-direction: column;
+}
+/*Верхний отступ в секциях*/
+section {
+  padding-top: 5.83334vw;
+}
+/*ПАРАМЕТРЫ ШАПКИ*/
+
+/*Стандарт для названий разделов*/
+.head-name {
+  font-size: 12rem;
+  line-height: 150%;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  flex-basis: 100%;
+}
+
+/*Дизайн хейдера*/
+.header {
+  background: #60f;
+  box-shadow: (0 0.20834vw 0.416667vw rgba(51, 0, 102, 0.5));
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+/*Логотипчик*/
+.logo {
+  width: 6.67vw;
+  margin: 0.3125vw 0 0.41667vw 0;
+}
+/*Положение навигации*/
+.nav {
+  margin: 1.09vw 0;
+}
+/*Приводим список навигации в порядок*/
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+/*Колдуем с ссылками в навигации*/
+.nav-item {
+  /*Для нормального задания фоновой картинки*/
+  display: block;
+  /*Иргаем со шрифтом*/
+  letter-spacing: 0.15em;
+  font-size: 4.5rem;
+  line-height: 200%;
+  color: #fff;
+  text-decoration: none;
+  /*Отступ между элементами*/
+  margin-left: 1.875vw;
+  /*ОТступ для фоновой картинки*/
+  padding-left: 1.25vw;
+  /*Сами параметры фона*/
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1.0417vw;
+}
+/*Маленький штрих*/
+.nav-item:hover {
+  /*Добавляет подчеркиание при наведении*/
+  text-decoration: underline;
+}
+/*Фон для О книге*/
+.about-book {
+  /*чтобы не полз чуть дальше нужного*/
+  margin-left: 0;
+  background-image: url("../img/icon/book.svg");
+}
+/*Фон О нас*/
+.about-us {
+  background-image: url("../img/icon/user.svg");
+}
+/*Фон Новости*/
+.news {
+  background-image: url("../img/icon/news.svg");
+}
+/*Фон Скачать*/
+.download {
+  background-image: url("../img/icon/download.svg");
+}
+/*Фон Читать*/
+.read {
+  background-image: url("../img/icon/reading-book.svg");
+}
+/*Фон Поддержать*/
+.donate {
+  background-image: url("../img/icon/dollar.svg");
+}
+
+/*ПАРАМЕТРЫ ОСНОВНОГО КОНТЕНТА*/
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*СЕКЦИЯ О КНИГЕ*/
+.book-section {
+  /*Делаем градиент*/
+  background: radial-gradient(
+      132.58% 132.72% at 95.81% -45.01%,
+      rgba(204, 102, 51, 0.5) 0%,
+      rgba(102, 0, 204, 0.5) 100%
+    ),
+    radial-gradient(
+      141.57% 141.57% at 28.13% -41.57%,
+      #6600ff 17.66%,
+      rgba(204, 102, 51, 0.86) 24.63%,
+      rgba(171, 69, 118, 0.905641) 32.51%,
+      #6600ff 41.93%,
+      #6633ff 55.5%,
+      #6600cc 78.82%
+    );
+}
+/*Секция с текстом*/
+.book-about {
+  display: flex;
+  flex-direction: column;
+  width: 31.77083vw;
+  margin-right: 20.9375vw;
+  margin-bottom: 13.3334vw;
+}
+/*Описание в разделе*/
+.book-description {
+  /*Игра с текстом*/
+  font-size: 9rem;
+  letter-spacing: 0.15em;
+  line-height: 200%;
+  text-align: justify;
+  margin-top: 1.45834vw;
+  margin-left: 2.70834vw;
+}
+/*Блок с кнопкой*/
+.block-button {
+  margin-bottom: 9.89583vw;
+}
+/*Стандартны параметры для кнопки*/
+.button {
+  width: 11.77083vw;
+  border-radius: 0.41667vw;
+  text-align: center;
+}
+/*Кнопка скачать*/
+.button-download {
+  background: rgba(255, 188, 0, 0.95);
+  box-shadow: 0.104167vw 0.104167vw 0.833333vw rgba(51, 0, 102, 0.4);
+}
+/*Изменение после наведения*/
+.button-download:hover {
+  background: rgba(102, 0, 204, 0.95);
+}
+/*Текст стандартной кнопки*/
+.button-text {
+  /*Для работы с отступами*/
+  display: block;
+  font-size: 4.5rem;
+  padding: 0.520833vw 0;
+  line-height: 200%;
+  letter-spacing: 0.15em;
+}
+/*Текст кнопки скачать*/
+.button-text-download {
+  color: #000;
+}
+/*Изменение цвета текста кнопки при наведении*/
+.button-text-download:hover {
+  color: #fff;
+}
+/*Обложка*/
+.img {
+  /*Временный фон*/
+  background: #fff;
+  box-shadow: 0.83334vw 0.83334vw 1.6667vw rgba(51, 0, 102, 0.5);
+  border-radius: 1.875vw;
+  width: 26.77083vw;
+  height: 35.2083vw;
+}
+
+/*СЕКЦИЯ О НАС*/
+.we-section {
+  /*Продолжаем градиент*/
+  background: radial-gradient(
+    100% 100% at 56.09% 100%,
+    #330066 0%,
+    rgba(102, 0, 255, 0.8) 50.43%,
+    rgba(153, 0, 204, 0.84) 75.21%,
+    #6600cc 87.18%
+  );
+}
+/*Блок с авторами*/
+.block-author {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12.03125vw;
+}
+/*Блок авторства*/
+.author {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4.4792vw;
+  flex-basis: 26.09375vw;
+}
+/*Правый блок*/
+.timur {
+  /*Нужен разворот*/
+  flex-direction: row-reverse;
+}
+/*Фотограция это дополнение по размеру для изображений*/
+.photo {
+  width: 8.4375vw;
+  height: 13.64458vw;
+  margin: 0;
+}
+/*Блок текста левого блока*/
+.right {
+  flex: 2 0 0;
+  /*ОТступ от фото*/
+  margin-left: 3.3334vw;
+}
+/*Блок текста правого блока*/
+.left {
+  flex: 2 0 0;
+  /*Отступ от фото*/
+  margin-right: 3.3334vw;
+}
+/*Имена авторов*/
+.name {
+  font-size: 8rem;
+  line-height: 150%;
+  font-weight: medium;
+  letter-spacing: 0.15em;
+  margin-bottom: 2.08334vw;
+}
+/*Информация об авторах*/
+.about-author {
+  font-size: 6.5rem;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+  text-align: justify;
+}
+/*Блок с социальными сетями*/
+.mass-media {
+  display: flex;
+  width: 12.5vw;
+  justify-content: space-between;
+}
+/*Иконци сетей*/
+.icon {
+  height: 3.33334vw;
+  width: 3.33334vw;
+  border-radius: 50%;
+  margin-top: 3.95834vw;
+}
+/*Изменение фона иконок при наведении*/
+.icon:hover {
+  /*Подумать о надобности и цвете*/
+  background: #60f;
+}
+
+/*НОВОСТИ*/
+.news-section {
+  /*А градиент все идет*/
+  background: radial-gradient(
+    100% 100% at 56.09% 0%,
+    #330066 0%,
+    rgba(102, 0, 255, 0.8) 51.09%,
+    rgba(204, 102, 51, 0.84) 76.2%,
+    #6600cc 87.19%
+  );
+}
+/*Небольшие изменения размеров контейнра*/
+.news-section .container {
+  width: calc(100vw - (6.0416667vw * 2));
+}
+/*Блок ленты*/
+.news-line {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5.416667vw;
+  margin-bottom: 14.375vw;
+} /*Стрелки ленты новостей*/
+.arrow {
+  width: 3.75vw;
+  height: 2.604167vw;
+}
+/*Блок с новостью*/
+.news-block {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  /*Из-за внутренних отступов, но может быть их стоит превратить во внешние для контента*/
+  box-sizing: border-box;
+  width: 25vw;
+  height: 25vw;
+  box-shadow: 0 0.416667vw 0.8333333vw rgba(0, 0, 0, 0.5);
+  border-radius: 1.25vw;
+  padding-top: 2.1875vw;
+  padding-left: 3.4375vw;
+  color: #000;
+}
+/*Название новости*/
+.news-name {
+  font-size: 8rem;
+  font-weight: medium;
+  line-height: 150%;
+  flex-basis: 100%;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.8333334vw;
+}
+/*Описание новости*/
+.news-description {
+  font-size: 6rem;
+  line-height: 200%;
+  letter-spacing: 0.15em;
+  text-align: justify;
+  flex-basis: 100%;
+  margin-bottom: 1.66667vw;
+  margin-right: 5.9375vw;
+}
+/*Дата публикации*/
+.news-date {
+  font-size: 4.5rem;
+  line-height: 200%;
+  flex-basis: 100%;
+  letter-spacing: 0.15em;
+  text-align: right;
+  margin-right: 2.083334vw;
+  margin-bottom: 2.083333vw;
+}
+
+/*СКАЧАТЬ*/
+.download-section {
+  background: linear-gradient(180deg, #6600cc 41.28%, #330066 100%);
+}
+/*Текстовый блок*/
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 34.6875vw;
+  margin-right: 23.9792vw;
+}
+/*Описание в блоке*/
+.description {
+  font-size: 8rem;
+  line-height: 200%;
+  letter-spacing: 0.15em;
+  margin-top: 1.3541667vw;
+  margin-left: 3.02083vw;
+}
+/*Уменьшенная обложка*/
+.download-section .img {
+  width: 21.09375vw;
+  height: 27.70833vw;
+}
+/*Блок с выбором формата и скачиванием*/
+.download-buttons {
+  margin-top: 3.542vw;
+  margin-left: 4.0625vw;
+  margin-bottom: 12.083334vw;
+}
+/*Список с форматами*/
+.format {
+  display: flex;
+  /*Фон*/
+  background: #ffffff;
+  box-shadow: 0 0.2083334vw 0.4166667vw rgba(0, 0, 0, 0.25);
+  border-radius: 0.4166667vw;
+  /*Текст*/
+  /*Шрифт сменен для нормального отображения цифры 2*/
+  font-family: "Nakora", sans-serif;
+  text-align: center;
+  color: #000;
+  font-size: 4rem;
+  line-height: 200%;
+  list-style: none;
+  width: 16.5625vw;
+  margin-bottom: 1.875vw;
+}
+/*Размер элемента списка*/
+.type {
+  flex-basis: 25%;
+}
+/*Убираем стандартную радиметку*/
+label input {
+  width: 0;
+  position: absolute;
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+}
+/*Делаем свою метку выбора*/
+.diseg-vibor {
+  display: inline-block;
+  width: 100%;
+  padding: 0.625vw 0;
+}
+/*Закругление для левой стороны*/
+.diseg-vibor-left {
+  border-top-left-radius: 0.4166667vw;
+  border-bottom-left-radius: 0.4166667vw;
+}
+/*Закругление для правой стороны*/
+.diseg-vibor-right {
+  border-top-right-radius: 0.4166667vw;
+  border-bottom-right-radius: 0.4166667vw;
+}
+/*Подсветка того, на что наведено*/
+.diseg-vibor:hover {
+  background: #6600cc;
+  color: #fff;
+}
+/*Выделение выбранного пункта*/
+input:checked + .diseg-vibor {
+  background: #330066;
+  color: #fff;
+}
+
+/*ЧИТАТЬ*/
+.read-section {
+  background: linear-gradient(180deg, #330066 46.71%, #330099 100%);
+}
+/*Блок выбора главы*/
+.charpets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #6600ff;
+  border-radius: 0.41666667vw;
+  margin-bottom: 4.0625vw;
+  margin-top: 1.3516667vw;
+}
+/*Стрелки выбора глав*/
+.arrow-charpet {
+  width: 2.3958333vw;
+  height: 1.7583333vw;
+  margin: 0 1.04166666667vw;
+}
+/*Список глав*/
+.list-charpets {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 75.1041666667vw;
+}
+/*Размер кнопок*/
+.button-charpet {
+  width: 8.54166667vw;
+}
+/*Номер главы*/
+.charpet {
+  display: block;
+  padding: 0.36458333vw 0;
+  text-align: center;
+  font-size: 6rem;
+  line-height: 200%;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  border-radius: 0.41666667vw;
+}
+/*Подсветка при наведение*/
+.charpet:hover {
+  background: rgba(255, 188, 0, 0.95);
+}
+/*Выделение при выборе данной главы, через псевдо флаг*/
+input:checked + .charpet {
+  background: rgba(255, 188, 0, 0.95);
+  box-shadow: inset 4px 0px 8px rgba(0, 0, 0, 0.25),
+    inset -4px 0px 8px rgba(0, 0, 0, 0.25);
+}
+/*Блок с текстом и названием главы*/
+.read-canvas {
+  margin: 0 auto 7.39583333vw;
+  box-sizing: border-box;
+  width: 74.791666667vw;
+  background: #eeebf0;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
+  border-radius: 4rem;
+  padding: 1.354166667vw 3.3333333vw 3.125vw;
+}
+/*Название главы в блоке для чтения*/
+.charpet-name {
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 200%;
+  letter-spacing: 0.15em;
+  color: #000;
+}
+/*Текст главы, который помещается в блоке*/
+.charpet-text {
+  font-size: 5rem;
+  text-align: justify;
+  line-height: 200%;
+  letter-spacing: 0.15em;
+  color: #000;
+}
+
+/*ПОДДЕРЖАТЬ НАС*/
+.donate-section {
+  background: linear-gradient(180deg, #330099 39.42%, #000033 100%);
+}
+/*Так проще расположить иконки, изменения распределения блоков 
+в контейнере, теперь со старта*/
+.donate-section .container {
+  justify-content: flex-start;
+}
+/*Текст с обращением*/
+.appeal {
+  font-size: 8rem;
+  line-height: 200%;
+  font-weight: medium;
+  letter-spacing: 0.15em;
+  text-align: justify;
+  width: 37.135716667vw;
+  margin-bottom: 29.0625vw;
+  margin-left: 4.6875vw;
+  margin-top: 4.375vw;
+}
+/*Блок с вариантами поддержки*/
+.variant-block {
+  margin-top: 4.375vw;
+  margin-left: 10.885416667vw;
+}
+/*Оформление текста в блоке поддержки*/
+.variant {
+  font-size: 7rem;
+  line-height: 230%;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-align: justify;
+  list-style: none;
+}
+/*Отступы между вариантами*/
+.item-var {
+  margin-bottom: 1.7708333vw;
+}
+/*Стандартные параметры для иконки поддержки*/
+.donate-icon {
+  display: inline-block;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 3.3333333vw 3.3333333vw;
+  padding-left: 4.6875vw;
+}
+/*Иконка патреона*/
+.patreon {
+  background-image: url("../img/icon/patreon\(1\).svg");
+}
+/*Иконка карты*/
+.card {
+  background-image: url("../img/icon/card.svg");
+  background-size: 4.2708333vw 3.3333333vw;
+}
+/*Иконка стрелки репоста*/
+.repost {
+  background-image: url("../img/icon/redo-arrow.svg");
+  background-size: 4.2708333vw 3.3333333vw;
+}
+
+/*ПОДВАЛ*/
+footer {
+  background: #000033;
+}
+/*Блок, в котором лежит логотип в подвале
+чтобы снести список с пунктами на строку ниже*/
+.footer-logo-block {
+  flex-basis: 100%;
+}
+/*Изменение отступов для логотипа*/
+footer .logo {
+  margin: 3.2291667vw 0 2.6041667vw;
+}
+/*Список пунктов подвала*/
+.footer-list {
+  display: flex;
+  list-style: none;
+  margin-left: 11.3541667vw;
+  margin-bottom: 14.7916667vw;
+}
+/*Расположение элементов списка*/
+.footer-list-item {
+  margin-right: 9.375vw;
+}
+/*Имена пунктов подвала*/
+.item-name {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 3.5rem;
+  font-weight: medium;
+  line-height: 200%;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.25vw;
+}
+/*Список подпунктов*/
+.item-list {
+  list-style: none;
+  margin-left: 0.5208333vw;
+}
+/*Отступы для подпунктов*/
+.item-list li {
+  margin-bottom: 0.625vw;
+}
+/*Стиль одпунктов*/
+.item-list-item {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 3rem;
+  line-height: 200%;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+}
+/*Выстраивание иконок соцсетей в строку с нашимим именами*/
+.social {
+  width: 8.385416667vw;
+  display: flex;
+  justify-content: space-between;
+}
+/*Изменение ссылок при наведение*/
+a.item-list-item:hover {
+  text-decoration: underline;
+}
+/*Наши имена в пункте соцсетей*/
+.footer-name {
+  display: block;
+}
+/*Блок с иконками*/
+.media-icon {
+  list-style: none;
+  display: flex;
+  width: 4.7916667vw;
+  justify-content: space-between;
+}
+/*Иконки соцсетй*/
+.icon-small {
+  border-radius: 50%;
+  width: 1.25vw;
+  height: 1.25vw;
+}
+/*Дизайн копирайт*/
+.copyright {
+  display: block;
+  flex-basis: 100%;
+  background: url("../img/icon/copyright.svg") no-repeat left center;
+  background-size: 0.625vw;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 3rem;
+  line-height: 200%;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  padding-left: 0.8333333vw;
+  margin-bottom: 4.79166667vw;
+}

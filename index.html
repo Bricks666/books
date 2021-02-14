@@ -2,162 +2,441 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="font.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Мысли в слух</title>
+    <title>Мысли вслух</title>
+    <!--Подключение шрифта-->
+    <link rel="stylesheet" href="css/font.css" />
+    <!--Подключение стилей-->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="head">
+    <header class="header">
       <div class="container">
-        <img class="logo" src="img/book_logo.svg" alt="logo" />
+        <!--Логотип-->
+        <img src="img/logo-whiet.svg" alt="Мысли в слух" class="logo" />
+        <!--Начигация-->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a class="nav-item about-book" href="#about-book">О книге</a>
+            </li>
+            <li><a class="nav-item about-us" href="#about-us">О нас</a></li>
+            <li><a class="nav-item news" href="#news">Новости</a></li>
+            <li><a class="nav-item download" href="#download">Скачать</a></li>
+            <li><a class="nav-item read" href="#read">Читать</a></li>
+            <li>
+              <a class="nav-item donate" href="#donate">Поддержать нас</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <nav class="nav">
-      <div class="container">
-        <ul class="struct-nav">
-          <li class="button button-nav">
-            <a
-              href="https:\\www.vk.com/uty_momo"
-              class="button-text button-text-nav"
-              >Новости</a
-            >
-          </li>
-          <li class="button button-nav">
-            <a href="#" class="button-text button-text-nav">Об авторах</a>
-          </li>
-          <li class="button button-nav">
-            <a href="#" class="button-text button-text-nav">Книга</a>
-          </li>
-          <li class="button button-nav">
-            <a href="#" class="button-text button-text-nav">Поддержка</a>
-          </li>
-          <li class="button button-nav">
-            <a href="#" class="button-text button-text-nav">Связь</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
     <main class="main">
-      <section>
+      <!--Первая секция. О книге-->
+      <section class="book-section" id="about-book">
         <div class="container">
-          <div class="struct-main">
-            <article class="info-book">
-              <h2 class="about-book">О нашей книге</h2>
-              <img class="picture" src="img/Book.jpg" />
-              <div class="description">
-                <h3 class="name-book">Революция сознания</h3>
-                <p class="description-text">
-                  Главный герой Валерий вот уже несколько десятков лет живет в
-                  одном городе на одной улице и все в той же квартире с
-                  неизменивщемся с момента заезда ремонтом ремонтом, ходит и
-                  работает Гордоморов на первом и, по его представлениям,
-                  последнем месте работы в своей уже движущейся к концу жизни.
-                  Но в один из послерабочих осенних вечеров, Валера приходит к
-                  четкой мысли, что пора что-то менять в своей жизни, а если
-                  сказать полнее, то все, все...
+          <!--Текстовая часть-->
+          <article class="book-about">
+            <!--Заголовок раздела-->
+            <h2 class="head-name">О книге</h2>
+            <!--Описани-->
+            <p class="book-description">
+              Тут будет краткое описание книги, но пока что я не знаю, что тут
+              написать, по этому будет такой текст
+            </p>
+          </article>
+          <!--Правая часть секции(обложка книги)-->
+          <article class="book-image">
+            <img src="" class="img" />
+          </article>
+          <!--Кнопка скачать-->
+          <article class="block-button">
+            <div class="button button-download">
+              <a class="button-text button-text-download">Скачать</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!--Вторая секция. О нас-->
+      <section class="we-section" id="about-us">
+        <div class="container">
+          <!--Заголовок секции-->
+          <h2 class="head-name">О нас</h2>
+          <!--Блок с авторами-->
+          <article class="block-author">
+            <!--Блок о Кирилле-->
+            <div class="author kirill">
+              <!--Фото-->
+              <img class="img photo" />
+              <!--Блок с текстом-->
+              <div class="right">
+                <!--Имя автора-->
+                <h3 class="name">Кирилл</h3>
+                <!--Краткое описание-->
+                <p class="about-author">
+                  Тут будет краткое описание книги, но пока что я не знаю, что
+                  тут написать, по этому будет такой текст
                 </p>
               </div>
-            </article>
-            <article class="list-charpets">
-              <h4 class="charpet">Главы</h4>
-              <ol class="list">
-                <li><a href="#" class="list-item">"Дорога на работу"</a></li>
-                <li>
-                  <a href="#" class="list-item">"Конец рабочей рутины"</a>
-                </li>
-                <li><a href="#" class="list-item">"Неспокойная ночь"</a></li>
-                <li>
-                  <a href="#" class="list-item">"Томительное ожидание"</a>
-                </li>
-                <li><a href="#" class="list-item">""</a></li>
-              </ol>
-            </article>
-            <article class="download">
-              <div class="button button-download">
-                <a
-                  class="button-text"
-                  href="Book/Revolution_of_mind.docx"
-                  download
-                >
-                  Скачать
-                </a>
+              <!--Блок с ссылками на соц сети-->
+              <div class="mass-media">
+                <a><img class="icon" src="img/icon/vk.svg" /></a>
+                <a><img class="icon" src="img/icon/instagram.svg" /></a>
+                <a><img class="icon" src="img/icon/telegram.svg" /></a>
               </div>
+            </div>
+            <!--Блок о Тимуре-->
+            <div class="author timur">
+              <img class="img photo" />
+              <div class="left">
+                <h3 class="name">Тимур</h3>
+                <p class="about-author">
+                  Тут будет краткое описание книги, но пока что я не знаю, что
+                  тут написать, по этому будет такой текст
+                </p>
+              </div>
+              <div class="mass-media">
+                <a><img class="icon" src="img/icon/vk.svg" /></a>
+                <a><img class="icon" src="img/icon/instagram.svg" /></a>
+                <a><img class="icon" src="img/icon/telegram.svg" /></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!--Третья секция. Новости-->
+      <section class="news-section" id="news">
+        <div class="container">
+          <!--Название секции-->
+          <h2 class="head-name">Новости</h2>
+          <!--Лента новостей-->
+          <div class="news-line">
+            <!--Стрелка назад-->
+            <img src="img/icon/left-arrow.svg" class="arrow" />
+            <!--Блок с новостью-->
+            <article class="news-block">
+              <!--Название новости-->
+              <h3 class="news-name">Заголовок</h3>
+              <!--Ее краткое содержание-->
+              <p class="news-description">
+                Тут должна быть какая-нибудь новость, событие, но в кратком
+                виде, чтобы поместилась
+              </p>
+              <!--Дата публикации-->
+              <time pubdate datetime="2021-01-20T20:16" class="news-date">
+                20.01.2021 20:16
+              </time>
             </article>
+            <article class="news-block">
+              <h3 class="news-name">Заголовок</h3>
+              <p class="news-description">
+                Тут должна быть какая-нибудь новость, событие, но в кратком
+                виде, чтобы поместилась
+              </p>
+              <time pubdate datetime="2021-01-20T20:16" class="news-date">
+                20.01.2021 20:16
+              </time>
+            </article>
+            <article class="news-block">
+              <h3 class="news-name">Заголовок</h3>
+              <p class="news-description">
+                Тут должна быть какая-нибудь новость, событие, но в кратком
+                виде, чтобы поместилась
+              </p>
+              <time pubdate datetime="2021-01-20T20:16" class="news-date">
+                20.01.2021 20:16
+              </time>
+            </article>
+            <img src="img/icon/right-arrow.svg" class="arrow" />
+          </div>
+        </div>
+      </section>
+      <!--Секция Четвертая. Скачивание книги-->
+      <section class="download-section" id="download">
+        <div class="container">
+          <!--Текстовый блок-->
+          <article class="text">
+            <h2 class="head-name">Подробнее о книге</h2>
+            <p class="description">
+              Тут будет еще немного о книге, или не немного, нужно будет
+              подумать, что рассказать, чтобы еще сильнее завлечь
+            </p>
+          </article>
+          <!--Обложка-->
+          <div><img class="img" /></div>
+          <!--Скачивание-->
+          <!--Не сделан моментт скачивания, нужно будет делать через скрипты, чтобы он при выборе флага менял ссылку в кнопке-->
+          <div class="download-buttons">
+            <!--Форма выбора формата-->
+            <form>
+              <!--Список форматов-->
+              <ul class="format">
+                <!--Формат-->
+                <li class="type">
+                  <!--Привязка формата к тексту-->
+                  <label>
+                    <!--Штука для выбора-->
+                    <input type="radio" name="format" value="PDF" id="PDF" />
+                    <!--Текст с дизайном выбора-->
+                    <span class="diseg-vibor diseg-vibor-left">PDF</span>
+                  </label>
+                </li>
+                <li class="type">
+                  <label>
+                    <input type="radio" name="format" value="EPUB" id="EPUB" />
+                    <span class="diseg-vibor">EPUB</span>
+                  </label>
+                </li>
+                <li class="type">
+                  <label>
+                    <input type="radio" name="format" value="TXT" id="TXT" />
+                    <span class="diseg-vibor">TXT</span>
+                  </label>
+                </li>
+                <li class="type">
+                  <label>
+                    <input type="radio" name="format" value="FB2" id="FB2" />
+                    <span class="diseg-vibor diseg-vibor-right">FB2</span>
+                  </label>
+                </li>
+              </ul>
+              <!--Кнопка скачивания-->
+              <div class="button button-download">
+                <a class="button-text button-text-download">Скачать</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--Секция Пятая. Чтение онлайн-->
+      <section class="read-section" id="read">
+        <div class="container">
+          <h2 class="head-name">Читать</h2>
+          <!--Лента с выбором главы-->
+          <article class="charpets">
+            <!--Стрелка назад листать список(Потом сделать пролистывание)-->
+            <img src="img/icon/back.svg" class="arrow-charpet" />
+            <!--Выбор главы в виде радио флагов-->
+            <form>
+              <ul class="list-charpets">
+                <!--Размер кнопки-->
+                <li class="button button-charpet">
+                  <label>
+                    <input type="radio" name="charpet" value="1" />
+                    <!--Работа с выбором-->
+                    <span class="charpet">Глава 1</span>
+                  </label>
+                </li>
+                <li class="button button-charpet">
+                  <label>
+                    <input type="radio" name="charpet" value="2" />
+                    <span class="charpet">Глава 2</span>
+                  </label>
+                </li>
+                <li class="button button-charpet">
+                  <label>
+                    <input type="radio" name="charpet" value="3" />
+                    <span class="charpet">Глава 3</span>
+                  </label>
+                </li>
+                <li class="button button-charpet">
+                  <label>
+                    <input type="radio" name="charpet" value="4" />
+                    <span class="charpet">Глава 4</span>
+                  </label>
+                </li>
+                <li class="button button-charpet">
+                  <label>
+                    <input type="radio" name="charpet" value="5" />
+                    <span class="charpet">Глава 5</span>
+                  </label>
+                </li>
+                <li class="button button-charpet">
+                  <label>
+                    <input type="radio" name="charpet" value="6" />
+                    <span class="charpet">Глава 6</span>
+                  </label>
+                </li>
+                <li class="button button-charpet">
+                  <label>
+                    <input type="radio" name="charpet" value="7" />
+                    <span class="charpet">Глава 7</span>
+                  </label>
+                </li>
+                <li class="button button-charpet">
+                  <label>
+                    <input type="radio" name="charpet" value="8" />
+                    <span class="charpet"> Глава 8 </span>
+                  </label>
+                </li>
+              </ul>
+            </form>
+            <!--Стрелка листает список вперед(будет)-->
+            <img src="img/icon/next.svg" class="arrow-charpet" />
+          </article>
+          <!--Блок с куском главы(Добавтить в его низ перелистывалку кусков)-->
+          <div class="read-canvas">
+            <h3 class="charpet-name">Дорога на работу</h3>
+            <p class="charpet-text">
+              На улице стояло октябрьское утро, когда Валерий вышел из дома и
+              под громкий хлопок металлической подъездной двери направился в
+              диспансер. Выйдя из своего двора и проходя мимо таких же на первый
+              взгляд серых и одинаковых хрущёвок, ему в глаза бросилось
+              объявление, выделявшееся ярким пятном и гласившее: «Надоело, что
+              вас с женой все время трясет, при подъезде к дому? У нас есть для
+              вас решение: заасфальтируйте свою грунтовую дорогу у нас по
+              выгодной...», на этом моменте мужчина оставил это объявление
+              позади себя, а его голова наполнилась ворчанием: «Они что думаю,
+              что много у кого есть собственный дом - спустя небольшой
+              промежуток времени он добавил - и жена? Если бы это было так... -
+              многозначительно и мечтательно пробубнил себе под нос Валера - Мне
+              хотя бы дом, я что не заслужил его?».
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Секция Шестая. Поддержка -->
+      <section class="donate-section" id="donate">
+        <div class="container">
+          <h2 class="head-name">Поддержать нас</h2>
+          <p class="appeal">
+            Если вам понравилась наша книга, то вы можете поддержать нас,
+            поделившись ссылкой на сайт в социальных сетях со своими друзьями
+            или оформив подписку на Patreon
+          </p>
+          <!--Варианты поддержки-->
+          <div class="variant-block">
+            <ul class="variant">
+              <li class="item-var">
+                <a class="donate-icon patreon">Patreon</a>
+              </li>
+              <li class="item-var"><a class="donate-icon card">Card</a></li>
+              <li class="item-var"><a class="donate-icon repost">Repost</a></li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer>
       <div class="container">
+        <!--Логотип-->
+        <div class="footer-logo-block">
+          <img class="logo" src="img/logo-whiet.svg" />
+        </div>
+        <!--Список этих пунктов в подвале-->
         <ul class="footer-list">
-          <li class="footer-item">
-            <span class="copy-right">Mandarin&Со 2020</span>
-          </li>
-          <li class="footer-item"><span>Контакты:</span></li>
-          <li class="footer-item">
-            <ul class="contacts-list">
-              Вконтакте
-              <li class="footer-item">
-                <a
-                  class="contact-name vk"
-                  href="https:\\vk.com\uty_momo"
-                  target="_blank"
-                >
-                  Кирилл
-                </a>
+          <!--Навигация-->
+          <li class="footer-list-item">
+            <!--Название пункта-->
+            <h4 class="item-name">Навигация</h4>
+            <!--Подпункты-->
+            <ul class="item-list">
+              <li>
+                <a class="item-list-item" href="#about-book">О книге</a>
               </li>
-              <li class="footer-item">
-                <a
-                  class="contact-name vk"
-                  href="https://vk.com/7azino77"
-                  target="_blank"
+              <li>
+                <a class="item-list-item" href="#about-us">О нас</a>
+              </li>
+              <li>
+                <a class="item-list-item" href="#news">Новости</a>
+              </li>
+              <li class="item-list-item">
+                <a class="item-list-item" href="#download">Скачать</a>
+              </li>
+              <li>
+                <a class="item-list-item" href="#read">Читать</a>
+              </li>
+            </ul>
+          </li>
+          <!--Контакты-->
+          <li class="footer-list-item">
+            <h4 class="item-name">Контакты</h4>
+            <ul class="item-list">
+              <li>
+                <a class="item-list-item" href="tel:+79533396737"
+                  >+7(953)339-67-37</a
                 >
-                  Тимур
+              </li>
+              <li>
+                <a class="item-list-item" href="mailto:bricks667@yandex.ru">
+                  bricks667@yandex.ru
                 </a>
               </li>
             </ul>
           </li>
-          <li class="footer-item">
-            <ul class="contacts-list">
-              Инстаграм
-              <li class="footer-item">
-                <a
-                  class="contact-name inst"
-                  href="https://instagram.com/_kurtizan_veka_"
-                  target="_blank"
-                >
-                  Кирилл
-                </a>
-              </li>
-              <li class="footer-item">
-                <a
-                  class="contact-name inst"
-                  href="https://instagram.com/just._.no._.name"
-                  target="_blank"
-                >
-                  Тимур
-                </a>
-              </li>
+          <!--Поддержать нас-->
+          <li class="footer-list-item">
+            <h4 class="item-name">Поддержать нас</h4>
+            <ul class="item-list">
+              <li><a class="item-list-item">Patreon</a></li>
             </ul>
           </li>
-          <li class="footer-item">
-            <ul class="contacts-list">
-              Почта
-              <li class="footer-item">
-                <a
-                  class="contact-name mail"
-                  href="mailto:tconckoff82@gmail.com"
-                  target="_blank"
-                >
-                  Кирилл
-                </a>
+          <!--Мы в соцсетях-->
+          <li class="footer-list-item">
+            <h4 class="item-name">Мы в соцсетях</h4>
+            <ul class="item-list">
+              <!--Тимур-->
+              <li class="item-list-item social">
+                <span class="footer-name">Тимур</span>
+                <!--Список соцсетей-->
+                <ul class="media-icon">
+                  <!--Инста-->
+                  <li>
+                    <a>
+                      <img
+                        class="icon-small"
+                        src="img/icon/instagram_small.svg"
+                      />
+                    </a>
+                  </li>
+                  <!--Телега-->
+                  <li>
+                    <a>
+                      <img
+                        class="icon-small"
+                        src="img/icon/telegram_small.svg"
+                      />
+                    </a>
+                  </li>
+                  <!--Вк-->
+                  <li>
+                    <a>
+                      <img class="icon-small" src="img/icon/vk_small.svg" />
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li class="footer-item">
-                <a class="contact-name mail" href="#" target="_self"> Тимур </a>
+              <!--Кирилл-->
+              <li class="item-list-item social">
+                <span class="footer-name">Кирилл</span>
+                <ul class="media-icon">
+                  <li>
+                    <a>
+                      <img
+                        class="icon-small"
+                        src="img/icon/instagram_small.svg"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <img
+                        class="icon-small"
+                        src="img/icon/telegram_small.svg"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <img class="icon-small" src="img/icon/vk_small.svg" />
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
         </ul>
+        <!--Копирайт-->
+        <span class="copyright">2021 Bricks company</span>
       </div>
     </footer>
   </body>
